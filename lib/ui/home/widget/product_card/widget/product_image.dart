@@ -43,13 +43,13 @@ class _ProductImageState extends State<ProductImage> {
             ),
           ),
           Positioned(
-              top: 10.0,
-              right: 20.0,
-              child: ProductFavoriteIcon(
-                isClick: isClick,
-                favIcon: widget.favIcon,
-                outlinedFavIcon: widget.outlinedFavIcon,
-              )),
+            top: 10.0,
+            right: 20.0,
+            child: ProductFavoriteIcon(
+              favIcon: widget.favIcon,
+              outlinedFavIcon: widget.outlinedFavIcon,
+            ),
+          ),
         ],
       ),
     );

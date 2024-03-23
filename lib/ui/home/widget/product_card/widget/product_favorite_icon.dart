@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 
 class ProductFavoriteIcon extends StatefulWidget {
-  late bool isClick = false;
   final Icon favIcon;
   final Icon outlinedFavIcon;
-  ProductFavoriteIcon({
+  const ProductFavoriteIcon({
     super.key,
-    required this.isClick,
     required this.favIcon,
     required this.outlinedFavIcon,
   });
@@ -16,15 +14,16 @@ class ProductFavoriteIcon extends StatefulWidget {
 }
 
 class _ProductFavoriteIconState extends State<ProductFavoriteIcon> {
+  late bool isClick = false;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
         setState(() {
-          widget.isClick = !widget.isClick;
+          isClick = !isClick;
         });
       },
-      child: widget.isClick ? widget.favIcon : widget.outlinedFavIcon,
+      child: isClick ? widget.favIcon : widget.outlinedFavIcon,
     );
   }
 }

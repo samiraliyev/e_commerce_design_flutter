@@ -26,7 +26,7 @@ class ProductModel {
   static List<ProductModel> pModel = [
     ProductModel(
       outFavIcon: AppPath.outlinedFavIcon,
-      favIcon: const Icon(Icons.favorite_border),
+      favIcon: AppPath.favIcon,
       imageUrl: AppPath.hoodieImageUrl,
       category: AppStrings.hoodieCategory,
       title: AppStrings.hoodieCategoryTitle,
@@ -37,7 +37,7 @@ class ProductModel {
     ProductModel(
       outFavIcon: AppPath.outlinedFavIcon,
       rateIcon: AppPath.rate,
-      favIcon: const Icon(Icons.favorite_border),
+      favIcon: AppPath.favIcon,
       imageUrl: AppPath.tshirtImageUrl,
       category: AppStrings.tshirtCategory,
       title: AppStrings.hoodieCategoryTitle,
@@ -47,7 +47,7 @@ class ProductModel {
     ProductModel(
       outFavIcon: AppPath.outlinedFavIcon,
       rateIcon: AppPath.rate,
-      favIcon: const Icon(Icons.favorite_border),
+      favIcon: AppPath.favIcon,
       imageUrl: AppPath.trousersImageUrl,
       category: AppStrings.pantsCategory,
       title: AppStrings.hoodieCategoryTitle,
@@ -57,7 +57,7 @@ class ProductModel {
     ProductModel(
         outFavIcon: AppPath.outlinedFavIcon,
         rateIcon: AppPath.rate,
-        favIcon: const Icon(Icons.favorite_border),
+        favIcon: AppPath.favIcon,
         imageUrl: AppPath.montImageUrl,
         category: AppStrings.montCategory,
         title: AppStrings.hoodieCategoryTitle,
