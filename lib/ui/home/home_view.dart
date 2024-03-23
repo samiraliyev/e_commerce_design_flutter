@@ -19,17 +19,19 @@ class _HomeViewState extends State<HomeView> {
     return Scaffold(
       appBar: const PreferredSize(
           preferredSize: Size.fromHeight(80.0), child: HomeAppBar()),
-      body: ListView(
-        children: [
-          const SizedBox(
-            height: 200.0,
-            child: CardPageViewBuilder(),
-          ),
-          20.h,
-          const Categories(),
-          20.h,
-          const ProductGridView()
-        ],
+      body: SizedBox(
+        child: ListView(
+          children: [
+            const SizedBox(
+              height: 200.0,
+              child: CardPageViewBuilder(),
+            ),
+            20.h,
+            const Categories(),
+            20.h,
+            const ProductGridView()
+          ],
+        ),
       ),
     );
   }

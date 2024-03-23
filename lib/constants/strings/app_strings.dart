@@ -5,6 +5,7 @@ class AppStrings {
   static const String cardButton = "Shop now";
   static const String allCategory = "All";
   static const String hoodieCategory = "Hoodie";
+  static const String montCategory = "Mont";
   static const String jacketCategory = "Jacket";
   static const String pantsCategory = "Pants";
   static const String tshirtCategory = "T-shirt";

@@ -36,7 +36,7 @@ class _ProductGridViewState extends State<ProductGridView> {
       child: GridView.builder(
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
-          mainAxisSpacing: 150,
+          mainAxisExtent: 365.0,
         ),
         itemCount: pModel.length,
         itemBuilder: (context, index) {

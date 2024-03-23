@@ -41,7 +41,7 @@ class ProductCardItem extends StatelessWidget {
               favIcon: favIcon,
               productImageUrl: imageUrl,
             ),
-            20.h,
+            5.h,
             Padding(
               padding: const EdgeInsets.all(12.0),
               child: Column(

@@ -1,13 +1,15 @@
+import 'package:e_commerce_app/ui/home/widget/product_card/widget/product_favorite_icon.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../constants/color/app_color.dart';
 
 class ProductImage extends StatefulWidget {
-  const ProductImage(
-      {super.key,
-      required this.productImageUrl,
-      required this.favIcon,
-      required this.outlinedFavIcon});
+  const ProductImage({
+    super.key,
+    required this.productImageUrl,
+    required this.favIcon,
+    required this.outlinedFavIcon,
+  });
   final String productImageUrl;
   final Icon favIcon;
   final Icon outlinedFavIcon;
@@ -41,17 +43,13 @@ class _ProductImageState extends State<ProductImage> {
             ),
           ),
           Positioned(
-            top: 10.0,
-            right: 20.0,
-            child: GestureDetector(
-              onTap: () {
-                setState(() {
-                  isClick = !isClick;
-                });
-              },
-              child: isClick ? widget.favIcon : widget.outlinedFavIcon,
-            ),
-          ),
+              top: 10.0,
+              right: 20.0,
+              child: ProductFavoriteIcon(
+                isClick: isClick,
+                favIcon: widget.favIcon,
+                outlinedFavIcon: widget.outlinedFavIcon,
+              )),
         ],
       ),
     );
