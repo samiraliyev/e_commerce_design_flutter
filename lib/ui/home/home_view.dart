@@ -26,9 +26,9 @@ class _HomeViewState extends State<HomeView> {
               height: 200.0,
               child: CardPageViewBuilder(),
             ),
-            20.h,
+            10.h,
             const Categories(),
-            20.h,
+            10.h,
             const ProductGridView()
           ],
         ),

@@ -10,52 +10,41 @@ class Categories extends StatefulWidget {
 }
 
 class _CategoriesState extends State<Categories> {
-  late bool isSelect;
+  late bool isSelect = false;
+  final List<String> pCategory = [
+    AppStrings.allCategory,
+    AppStrings.hoodieCategory,
+    AppStrings.jacketCategory,
+    AppStrings.pantsCategory,
+    AppStrings.tshirtCategory,
+    AppStrings.shirtCategory,
+    AppStrings.outwearCategory,
+    AppStrings.accessoriesCategory
+  ];
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      scrollDirection: Axis.horizontal,
-      child: Padding(
-        padding: const EdgeInsets.only(left: 20.0),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            TextButton(
-              onPressed: () {},
-              child: const Text(AppStrings.allCategory,
-                  style: TextStyle(color: AppColor.priceColor)),
+    return SizedBox(
+      height: 20.0,
+      child: ListView.builder(
+        scrollDirection: Axis.horizontal,
+        itemCount: pCategory.length,
+        itemBuilder: (context, index) {
+          return TextButton(
+            onPressed: () {
+              setState(() {
+                isSelect = !isSelect;
+              });
+            },
+            child: Text(
+              pCategory[index],
+              style: TextStyle(
+                  color: isSelect
+                      ? AppColor.priceColor
+                      : AppColor.standartCategoryColor),
             ),
-            TextButton(
-              onPressed: () {},
-              child: const Text(AppStrings.hoodieCategory),
-            ),
-            TextButton(
-              onPressed: () {},
-              child: const Text(AppStrings.jacketCategory),
-            ),
-            TextButton(
-              onPressed: () {},
-              child: const Text(AppStrings.pantsCategory),
-            ),
-            TextButton(
-              onPressed: () {},
-              child: const Text(AppStrings.tshirtCategory),
-            ),
-            TextButton(
-              onPressed: () {},
-              child: const Text(AppStrings.shirtCategory),
-            ),
-            TextButton(
-              onPressed: () {},
-              child: const Text(AppStrings.outwearCategory),
-            ),
-            TextButton(
-              onPressed: () {},
-              child: const Text(AppStrings.accessoriesCategory),
-            ),
-          ],
-        ),
+          );
+        },
       ),
     );
   }

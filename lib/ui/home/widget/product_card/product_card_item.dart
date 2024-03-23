@@ -30,7 +30,7 @@ class ProductCardItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(12.0),
+      padding: const EdgeInsets.all(10.0),
       child: Expanded(
         child: Card(
             child: Column(
@@ -43,7 +43,7 @@ class ProductCardItem extends StatelessWidget {
             ),
             5.h,
             Padding(
-              padding: const EdgeInsets.all(12.0),
+              padding: const EdgeInsets.all(10.0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
