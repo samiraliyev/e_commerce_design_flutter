@@ -1,6 +1,5 @@
 import 'package:e_commerce_app/constants/color/app_color.dart';
 import 'package:e_commerce_app/constants/strings/app_strings.dart';
-import 'package:e_commerce_app/extension/sized_extension.dart';
 import 'package:flutter/material.dart';
 
 class Categories extends StatefulWidget {
@@ -22,24 +21,39 @@ class _CategoriesState extends State<Categories> {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            const Text(
-              AppStrings.allCategory,
-              style: TextStyle(color: AppColor.priceColor),
+            TextButton(
+              onPressed: () {},
+              child: const Text(AppStrings.allCategory,
+                  style: TextStyle(color: AppColor.priceColor)),
             ),
-            10.w,
-            const Text(AppStrings.hoodieCategory),
-            10.w,
-            const Text(AppStrings.jacketCategory),
-            10.w,
-            const Text(AppStrings.pantsCategory),
-            10.w,
-            const Text(AppStrings.tshirtCategory),
-            10.w,
-            const Text(AppStrings.shirtCategory),
-            10.w,
-            const Text(AppStrings.outwearCategory),
-            10.w,
-            const Text(AppStrings.accessoriesCategory),
+            TextButton(
+              onPressed: () {},
+              child: const Text(AppStrings.hoodieCategory),
+            ),
+            TextButton(
+              onPressed: () {},
+              child: const Text(AppStrings.jacketCategory),
+            ),
+            TextButton(
+              onPressed: () {},
+              child: const Text(AppStrings.pantsCategory),
+            ),
+            TextButton(
+              onPressed: () {},
+              child: const Text(AppStrings.tshirtCategory),
+            ),
+            TextButton(
+              onPressed: () {},
+              child: const Text(AppStrings.shirtCategory),
+            ),
+            TextButton(
+              onPressed: () {},
+              child: const Text(AppStrings.outwearCategory),
+            ),
+            TextButton(
+              onPressed: () {},
+              child: const Text(AppStrings.accessoriesCategory),
+            ),
           ],
         ),
       ),
