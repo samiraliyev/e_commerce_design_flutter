@@ -15,4 +15,10 @@ class AppPath {
       Icon(Icons.favorite, color: AppColor.favIconColor);
 
   static const Icon outlinedFavIcon = Icon(Icons.favorite_border_outlined);
+
+  static const Icon navHome = Icon(Icons.home);
+  static const Icon navDiscovery = Icon(Icons.widgets);
+  static const Icon navWishList = Icon(Icons.favorite_outline_sharp);
+  static const Icon navMessages = Icon(Icons.message);
+  static const Icon navProfile = Icon(Icons.person_2_outlined);
 }

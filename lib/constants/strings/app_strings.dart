@@ -16,4 +16,10 @@ class AppStrings {
       "Erigo Hoodie Kagoshima \nDark Oak Unisex";
 
   static const String price = "\$17.00";
+
+  static const String bottomNavBarHome = "Home";
+  static const String bottomNavBarDiscover = "Discover";
+  static const String bottomNavBarWishList = "WishList";
+  static const String bottomNavBarMessage = "Message";
+  static const String bottomNavBarProfile = "Profile";
 }
