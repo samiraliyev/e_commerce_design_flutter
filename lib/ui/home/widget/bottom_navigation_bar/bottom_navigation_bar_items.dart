@@ -29,38 +29,49 @@ class _NavigationExampleState extends State<BottomNavigationBarItems> {
 
   @override
   Widget build(BuildContext context) {
-    return Theme(
-      data: ThemeData(
-        canvasColor: AppColor.navbarBg,
+    return SafeArea(
+      child: Container(
+        height: 90.0,
+        padding: const EdgeInsets.all(12.0),
+        margin: const EdgeInsets.symmetric(horizontal: 12.0),
+        child: Theme(
+          data: ThemeData(
+            canvasColor: AppColor.navbarBg,
+          ),
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(30.0),
+            child: BottomNavigationBar(
+                // when navbar item ic clicked , then change effect type
+                type: BottomNavigationBarType.shifting,
+                onTap: (index) => _changeTab(index),
+                currentIndex: currentPageIndex,
+                selectedItemColor: AppColor.priceColor,
+                unselectedItemColor: AppColor.white,
+                showUnselectedLabels: true,
+                items: const [
+                  BottomNavigationBarItem(
+                    icon: AppPath.navHome,
+                    label: AppStrings.bottomNavBarHome,
+                  ),
+                  BottomNavigationBarItem(
+                    icon: AppPath.navDiscovery,
+                    label: AppStrings.bottomNavBarDiscover,
+                  ),
+                  BottomNavigationBarItem(
+                    icon: AppPath.navWishList,
+                    label: AppStrings.bottomNavBarWishList,
+                  ),
+                  BottomNavigationBarItem(
+                    icon: AppPath.navMessages,
+                    label: AppStrings.bottomNavBarMessage,
+                  ),
+                  BottomNavigationBarItem(
+                      icon: AppPath.navProfile,
+                      label: AppStrings.bottomNavBarProfile)
+                ]),
+          ),
+        ),
       ),
-      child: BottomNavigationBar(
-          // when navbar item ic clicked , then change effect type
-          type: BottomNavigationBarType.shifting,
-          onTap: (index) => _changeTab(index),
-          currentIndex: currentPageIndex,
-          selectedItemColor: AppColor.priceColor,
-          unselectedItemColor: AppColor.white,
-          showUnselectedLabels: true,
-          items: const [
-            BottomNavigationBarItem(
-              icon: AppPath.navHome,
-              label: AppStrings.bottomNavBarHome,
-            ),
-            BottomNavigationBarItem(
-              icon: AppPath.navDiscovery,
-              label: AppStrings.bottomNavBarDiscover,
-            ),
-            BottomNavigationBarItem(
-              icon: AppPath.navWishList,
-              label: AppStrings.bottomNavBarWishList,
-            ),
-            BottomNavigationBarItem(
-              icon: AppPath.navMessages,
-              label: AppStrings.bottomNavBarMessage,
-            ),
-            BottomNavigationBarItem(
-                icon: AppPath.navProfile, label: AppStrings.bottomNavBarProfile)
-          ]),
     );
   }
 }
