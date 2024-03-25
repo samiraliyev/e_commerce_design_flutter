@@ -32,6 +32,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
             ),
           ),
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               ...List.generate(DetailImageList.imgUrl.length,
                   (index) => buildSmallProductView(index))
