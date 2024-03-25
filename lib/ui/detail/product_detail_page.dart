@@ -1,7 +1,5 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
+import 'package:e_commerce_app/ui/detail/detail_image_list.dart';
 import 'package:flutter/material.dart';
-
-import 'package:e_commerce_app/models/product_model/product_model.dart';
 
 import '../../constants/color/app_color.dart';
 import '../home/widget/app_bar/detail_page_app_bar.dart';
@@ -9,9 +7,9 @@ import '../home/widget/app_bar/detail_page_app_bar.dart';
 class ProductDetailPage extends StatefulWidget {
   const ProductDetailPage({
     super.key,
-    required this.pModel,
+    required this.images,
   });
-  final ProductModel pModel;
+  final List images;
 
   @override
   State<ProductDetailPage> createState() => _ProductDetailPageState();
@@ -30,12 +28,12 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
             width: MediaQuery.of(context).size.width * 0.8,
             child: AspectRatio(
               aspectRatio: 1,
-              child: Image.asset(widget.pModel.imageUrl[selectedImage]),
+              child: Image.asset(DetailImageList.imgUrl[selectedImage]),
             ),
           ),
           Row(
             children: [
-              ...List.generate(widget.pModel.imageUrl.length,
+              ...List.generate(DetailImageList.imgUrl.length,
                   (index) => buildSmallProductView(index))
             ],
           )
@@ -65,7 +63,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                 : AppColor.inputColor,
           ),
         ),
-        child: Image.asset(widget.pModel.imageUrl[0]),
+        child: Image.asset(DetailImageList.imgUrl[0]),
       ),
     );
   }
