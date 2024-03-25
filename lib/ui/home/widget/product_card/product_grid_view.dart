@@ -2,6 +2,8 @@ import 'package:e_commerce_app/models/product_model/product_model.dart';
 import 'package:e_commerce_app/ui/home/widget/product_card/product_card_item.dart';
 import 'package:flutter/material.dart';
 
+import '../../../detail/product_detail_page.dart';
+
 class ProductGridView extends StatefulWidget {
   const ProductGridView({super.key});
 
@@ -11,6 +13,7 @@ class ProductGridView extends StatefulWidget {
 
 class _ProductGridViewState extends State<ProductGridView> {
   late PageController _pageController;
+  late ProductModel pModel;
   final int _currentPage = 0;
 
   @override
@@ -41,14 +44,26 @@ class _ProductGridViewState extends State<ProductGridView> {
         itemCount: pModel.length,
         itemBuilder: (context, index) {
           final items = pModel[index];
-          return ProductCardItem(
-            outFavIcon: items.outFavIcon,
-            category: items.category,
-            favIcon: items.favIcon,
-            imageUrl: items.imageUrl,
-            price: items.price,
-            rate: items.rateIcon,
-            title: items.title,
+          return GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) {
+                    return const ProductDetailPage();
+                  },
+                ),
+              );
+            },
+            child: ProductCardItem(
+              outFavIcon: items.outFavIcon,
+              category: items.category,
+              favIcon: items.favIcon,
+              imageUrl: items.imageUrl,
+              price: items.price,
+              rate: items.rateIcon,
+              title: items.title,
+            ),
           );
         },
       ),

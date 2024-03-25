@@ -22,4 +22,20 @@ class AppStrings {
   static const String bottomNavBarWishList = "WishList";
   static const String bottomNavBarMessage = "Message";
   static const String bottomNavBarProfile = "Profile";
+
+  static const String detailAppText = "Detail";
+  static const String size = "Size";
+  static const String review = "(100 Reviews)";
+  static const String purchased = "122 (Purchased)";
+  static const String stock = "122 (Stocks)";
+  static const String sSize = "S";
+  static const String mSize = "M";
+  static const String lSize = "L";
+  static const String xlSize = "XL";
+
+  static const String descProduct =
+      """It is a long established fact that a reader will be distracted
+   by the readable content of a page when looking at its layout. The point of using 
+   Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 
+   'Content here, content here'.""";
 }

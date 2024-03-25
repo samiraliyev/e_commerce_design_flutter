@@ -21,4 +21,5 @@ class AppPath {
   static const Icon navWishList = Icon(Icons.favorite_outline_sharp);
   static const Icon navMessages = Icon(Icons.message);
   static const Icon navProfile = Icon(Icons.person_2_outlined);
+  static const Icon share = Icon(Icons.share_outlined);
 }
