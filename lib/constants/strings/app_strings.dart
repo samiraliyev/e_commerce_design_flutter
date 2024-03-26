@@ -34,8 +34,30 @@ class AppStrings {
   static const String xlSize = "XL";
 
   static const String descProduct =
-      """It is a long established fact that a reader will be distracted
-   by the readable content of a page when looking at its layout. The point of using 
-   Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 
-   'Content here, content here'.""";
+      """It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.""";
+
+  static const String hoodieDetail1 = "assets/images/hoodie1.png";
+  static const String hoodieDetail2 = "assets/images/hoodie2.png";
+  static const String hoodieDetail3 = "assets/images/hoodie3.png";
+  static const String hoodieDetail4 = "assets/images/hoodie4.png";
+
+  static const String tshirtDetail1 = "assets/images/tshirt1.png";
+  static const String tshirtDetail2 = "assets/images/tshirt2.png";
+  static const String tshirtDetail3 = "assets/images/tshirt3.png";
+  static const String tshirtDetail4 = "assets/images/tshirt4.png";
+
+  static const String pantsDetail1 = "assets/images/pants1.png";
+  static const String pantsDetail2 = "assets/images/pants2.png";
+  static const String pantsDetail3 = "assets/images/pants3.png";
+  static const String pantsDetail4 = "assets/images/pants4.png";
+
+  static const String montDetail1 = "assets/images/mont1.png";
+  static const String montDetail2 = "assets/images/mont2.png";
+  static const String montDetail3 = "assets/images/mont3.png";
+  static const String montDetail4 = "assets/images/mont4.png";
+
+  static const String rateNum = "4.8";
+  static const String descriptionProductTitle = "Description Product";
+  static const String titlePrice = "Price";
+  static const String buy = "Buy now";
 }

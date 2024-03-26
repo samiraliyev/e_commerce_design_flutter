@@ -22,4 +22,9 @@ class AppPath {
   static const Icon navMessages = Icon(Icons.message);
   static const Icon navProfile = Icon(Icons.person_2_outlined);
   static const Icon share = Icon(Icons.share_outlined);
+  static const Icon basket = Icon(
+    Icons.shopping_basket_outlined,
+    color: Colors.white,
+    size: 20.0,
+  );
 }

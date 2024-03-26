@@ -12,7 +12,10 @@ class ProductModel {
   final Icon favIcon;
   final Icon outFavIcon;
 
+  final List<String> imgUrl;
+
   ProductModel({
+    required this.imgUrl,
     required this.outFavIcon,
     required this.favIcon,
     required this.imageUrl,
@@ -25,6 +28,12 @@ class ProductModel {
 
   static List<ProductModel> pModel = [
     ProductModel(
+      imgUrl: [
+        AppStrings.hoodieDetail1,
+        AppStrings.hoodieDetail2,
+        AppStrings.hoodieDetail3,
+        AppStrings.hoodieDetail4,
+      ],
       outFavIcon: AppPath.outlinedFavIcon,
       favIcon: AppPath.favIcon,
       imageUrl: AppPath.hoodieImageUrl,
@@ -35,6 +44,12 @@ class ProductModel {
       price: AppStrings.price,
     ),
     ProductModel(
+      imgUrl: [
+        AppStrings.tshirtDetail1,
+        AppStrings.tshirtDetail2,
+        AppStrings.tshirtDetail3,
+        AppStrings.tshirtDetail4,
+      ],
       outFavIcon: AppPath.outlinedFavIcon,
       rateIcon: AppPath.rate,
       favIcon: AppPath.favIcon,
@@ -45,6 +60,12 @@ class ProductModel {
       price: AppStrings.price,
     ),
     ProductModel(
+      imgUrl: [
+        AppStrings.pantsDetail1,
+        AppStrings.pantsDetail2,
+        AppStrings.pantsDetail3,
+        AppStrings.pantsDetail4,
+      ],
       outFavIcon: AppPath.outlinedFavIcon,
       rateIcon: AppPath.rate,
       favIcon: AppPath.favIcon,
@@ -55,6 +76,12 @@ class ProductModel {
       price: AppStrings.price,
     ),
     ProductModel(
+        imgUrl: [
+          AppStrings.montDetail1,
+          AppStrings.montDetail2,
+          AppStrings.montDetail3,
+          AppStrings.montDetail4,
+        ],
         outFavIcon: AppPath.outlinedFavIcon,
         rateIcon: AppPath.rate,
         favIcon: AppPath.favIcon,

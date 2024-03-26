@@ -50,9 +50,7 @@ class _ProductGridViewState extends State<ProductGridView> {
                 context,
                 MaterialPageRoute(
                   builder: (context) {
-                    return const ProductDetailPage(
-                      images: [],
-                    );
+                    return const ProductDetailPage();
                   },
                 ),
               );

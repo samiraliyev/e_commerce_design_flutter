@@ -9,29 +9,26 @@ class DetailPageAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(right: 50.0),
-      child: AppBar(
-        centerTitle: true,
-        title: const Text(
-          AppStrings.detailAppText,
-        ),
-        actions: [
-          Container(
-              width: 40.0,
-              height: 40.0,
-              decoration: BoxDecoration(
-                  shape: BoxShape.circle, color: Colors.grey.shade200),
-              child: AppPath.share),
-          20.w,
-          Container(
-              width: 40.0,
-              height: 40.0,
-              decoration: BoxDecoration(
-                  shape: BoxShape.circle, color: Colors.grey.shade200),
-              child: AppPath.navMessages),
-        ],
+    return AppBar(
+      centerTitle: true,
+      title: const Text(
+        AppStrings.detailAppText,
       ),
+      actions: [
+        Container(
+            width: 40.0,
+            height: 40.0,
+            decoration: BoxDecoration(
+                shape: BoxShape.circle, color: Colors.grey.shade200),
+            child: AppPath.share),
+        20.w,
+        Container(
+            width: 40.0,
+            height: 40.0,
+            decoration: BoxDecoration(
+                shape: BoxShape.circle, color: Colors.grey.shade200),
+            child: AppPath.navMessages),
+      ],
     );
   }
 }
