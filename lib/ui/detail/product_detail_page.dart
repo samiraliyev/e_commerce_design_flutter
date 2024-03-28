@@ -1,9 +1,7 @@
 import 'package:e_commerce_app/constants/path/app_path.dart';
 import 'package:e_commerce_app/extension/sized_extension.dart';
 import 'package:e_commerce_app/models/product_model/product_model.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 import '../../constants/color/app_color.dart';
 import '../../constants/strings/app_strings.dart';

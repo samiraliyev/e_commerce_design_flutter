@@ -36,9 +36,13 @@ class _ProductImageState extends State<ProductImage> {
               width: 200.0,
               height: 180.0,
               decoration: BoxDecoration(
+                borderRadius: const BorderRadius.only(
+                    topLeft: Radius.circular(10.0),
+                    topRight: Radius.circular(10.0)),
                 image: DecorationImage(
-                    image: AssetImage(widget.productImageUrl),
-                    fit: BoxFit.cover),
+                  image: AssetImage(widget.productImageUrl),
+                  fit: BoxFit.cover,
+                ),
               ),
             ),
           ),

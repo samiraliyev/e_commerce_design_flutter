@@ -7,15 +7,17 @@ class Shop extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.teal,
-      alignment: Alignment.center,
-      child: const Text(
-        "Mubarekdi !!!",
-        style: TextStyle(
-          color: AppColor.white,
-          fontSize: 34.0,
-          fontWeight: FontWeight.bold,
+    return Scaffold(
+      body: Container(
+        color: Colors.teal,
+        alignment: Alignment.center,
+        child: const Text(
+          "Mubarekdi !!!",
+          style: TextStyle(
+            color: AppColor.white,
+            fontSize: 34.0,
+            fontWeight: FontWeight.bold,
+          ),
         ),
       ),
     );
