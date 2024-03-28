@@ -211,7 +211,12 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                 ),
               ),
               15.h,
-              const Text(AppStrings.descProduct),
+              const Text(
+                AppStrings.descProduct,
+                style: TextStyle(
+                  fontSize: 18.0,
+                ),
+              ),
               20.h,
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,

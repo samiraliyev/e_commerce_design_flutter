@@ -8,6 +8,16 @@ class Shop extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        leading: IconButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          icon: const Icon(Icons.arrow_back),
+        ),
+        title: const Text("Aldiqlarin"),
+        centerTitle: true,
+      ),
       body: Container(
         color: Colors.teal,
         alignment: Alignment.center,
