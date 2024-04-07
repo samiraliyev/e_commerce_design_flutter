@@ -32,7 +32,8 @@ class _HomeViewState extends State<HomeView> {
           const ProductGridView(),
         ],
       ),
-      bottomNavigationBar: const BottomNavigationBarItems(),
+      floatingActionButton: const BottomNavigationBarItems(),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
   }
 }

@@ -41,6 +41,7 @@ class _NavigationExampleState extends State<BottomNavigationBarItems> {
           child: ClipRRect(
             borderRadius: BorderRadius.circular(30.0),
             child: BottomNavigationBar(
+
                 // when navbar item ic clicked , then change effect type
                 type: BottomNavigationBarType.shifting,
                 onTap: (index) => _changeTab(index),
